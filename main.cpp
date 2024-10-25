@@ -4,6 +4,7 @@
 #include <fstream>
 #include <iomanip>
 #include <list>
+#include <set>
 #include "Goat.h"
 using namespace std;
 
@@ -89,14 +90,14 @@ void add_goat(set<Goat> &trip, string names[], string colors[])
     string c = colors[rand() % SZ_COLORS];
     int a = rand() % MAX_AGE;
     Goat temp(n, a, c);
-    trip.push_back(temp);
+    trip.insert(temp);
     return;
 }
 
 // deletes specified goat from list
 // arguments: address to list of current trip
 // returns: none
-void delete_goat(list<Goat> &trip)
+void delete_goat(set<Goat> &trip)
 {
     int entry;
 
@@ -116,7 +117,7 @@ void delete_goat(list<Goat> &trip)
 // displays current trip
 // arguments: address to trip list
 // returns: none
-void display_trip(list<Goat> trip)
+void display_trip(set<Goat> trip)
 {
    int i = 1;
    for(auto it = trip.begin(); it != trip.end(); it++)

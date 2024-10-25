@@ -24,6 +24,10 @@ public:
     string get_color() const        { return color; }
 
     // write overloaded < operator for the std::list
+    Goat operator<(const Goat& g)
+    {
+        return name < g.get_name();
+    }
 };
 
 #endif
