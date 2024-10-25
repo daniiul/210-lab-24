@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1729824550 source:c:\users\guine\onedrive\documents\codeblocks\210-lab-24\main.cpp
+	<iostream>
+	<fstream>
+	<iomanip>
+	<list>
+	<set>
+	"Goat.h"
+
+1729826155 c:\users\guine\onedrive\documents\codeblocks\210-lab-24\goat.h
+	<iostream>
+

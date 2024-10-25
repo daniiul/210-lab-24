@@ -47,7 +47,7 @@ int main() {
        }
        else if (op == 3)
        {
-            cout << "Current  list: " << endl;
+            cout << "Current  set: " << endl;
             display_trip(trip);
        }
        op = main_menu();
@@ -82,7 +82,7 @@ int main_menu()
 }
 
 // adds a new goat to the set with a random name age and color
-// arguments: address to list of current trip, array of names, array of colors
+// arguments: address to set of current trip, array of names, array of colors
 // returns: none
 void add_goat(set<Goat> &trip, string names[], string colors[])
 {
@@ -94,8 +94,8 @@ void add_goat(set<Goat> &trip, string names[], string colors[])
     return;
 }
 
-// deletes specified goat from list
-// arguments: address to list of current trip
+// deletes specified goat from set
+// arguments: address to set of current trip
 // returns: none
 void delete_goat(set<Goat> &trip)
 {
@@ -115,7 +115,7 @@ void delete_goat(set<Goat> &trip)
 }
 
 // displays current trip
-// arguments: address to trip list
+// arguments: address to trip set
 // returns: none
 void display_trip(set<Goat> trip)
 {
